@@ -6,70 +6,101 @@
     <meta name="description" content="Tejas Pawar Portfolio - Java Full Stack Developer">
     <title>Tejas Pawar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="container">
-            <h1>Tejas Pawar</h1>
-            <p>Java Full Stack Developer | Computer Engineer</p>
+            <h1 class="animate-title">Tejas Pawar</h1>
+            <p class="subtitle">Java Full Stack Developer | Computer Engineer</p>
+            <a href="#about" class="btn">Explore More</a>
         </div>
     </header>
 
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a BE Computer Engineering graduate with knowledge of Java, C++, and problem-solving. Currently seeking opportunities to enhance my skills in the tech industry.</p>
-            <ul>
-                <li><strong>Phone:</strong> 9325600586</li>
-                <li><strong>Email:</strong> <a href="mailto:tejaspawar1503@gmail.com">tejaspawar1503@gmail.com</a></li>
-                <li><strong>Location:</strong> Dhayari, Pune, India</li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tejas-pawar-33645b235" target="_blank">LinkedIn Profile</a></li>
-            </ul>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a BE Computer Engineering graduate with knowledge of Java, C++, and problem-solving. Currently seeking opportunities to enhance my skills in the tech industry.</p>
+                <ul class="personal-info">
+                    <li><i class="fas fa-phone"></i> 9325600586</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:tejaspawar1503@gmail.com">tejaspawar1503@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dhayari, Pune, India</li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tejas-pawar-33645b235" target="_blank">LinkedIn Profile</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="skills">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>Java Full Stack</li>
-                <li>C++</li>
-                <li>Problem-Solving</li>
-                <li>Computer Literacy</li>
-            </ul>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Java Full Stack</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Problem-Solving</h3>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Image Caption Generation:</strong> Developed a system that generates captions for images using ML.</li>
-                <li><strong>Fake News Detection:</strong> Created a fake news detection system during my internship at YBI Foundation.</li>
-            </ul>
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Image Caption Generation</h3>
+                    <p>Developed a system that generates captions for images using machine learning techniques.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Fake News Detection</h3>
+                    <p>Created a fake news detection system during an internship at YBI Foundation.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="education">
         <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Engineering (Computer):</strong> Sinhagad College of Engineering, Pune [CGPA: 8.7]</li>
-                <li><strong>12th Grade:</strong> B.H. Chate Junior College [92%]</li>
-                <li><strong>10th Grade:</strong> S.D. Katariya High School [92.2%]</li>
+            <h2 class="section-title">Education</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>Bachelor of Engineering (Computer)</h3>
+                    <p>Sinhagad College of Engineering, Pune [CGPA: 8.7]</p>
+                </li>
+                <li>
+                    <h3>12th Grade</h3>
+                    <p>B.H. Chate Junior College [92%]</p>
+                </li>
+                <li>
+                    <h3>10th Grade</h3>
+                    <p>S.D. Katariya High School [92.2%]</p>
+                </li>
             </ul>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form action="mailto:tejaspawar1503@gmail.com" method="post" enctype="text/plain">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:tejaspawar1503@gmail.com" method="post" enctype="text/plain" class="contact-form">
                 <input type="text" name="name" placeholder="Your Name">
                 <input type="email" name="email" placeholder="Your Email">
                 <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
@@ -79,5 +110,7 @@
             <p>© 2024 Tejas Pawar | All Rights Reserved</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
