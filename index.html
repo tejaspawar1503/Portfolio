@@ -1,116 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tejas Pawar Portfolio - Java Full Stack Developer">
     <title>Tejas Pawar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header id="home">
-        <div class="container">
-            <h1 class="animate-title">Tejas Pawar</h1>
-            <p class="subtitle">Java Full Stack Developer | Computer Engineer</p>
-            <a href="#about" class="btn">Explore More</a>
-        </div>
-    </header>
 
-    <section id="about">
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I am a BE Computer Engineering graduate with knowledge of Java, C++, and problem-solving. Currently seeking opportunities to enhance my skills in the tech industry.</p>
-                <ul class="personal-info">
-                    <li><i class="fas fa-phone"></i> 9325600586</li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:tejaspawar1503@gmail.com">tejaspawar1503@gmail.com</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> Dhayari, Pune, India</li>
-                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tejas-pawar-33645b235" target="_blank">LinkedIn Profile</a></li>
+            <a class="navbar-brand" href="#">Tejas Pawar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="skills">
+    <!-- Hero Section -->
+    <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center bg-dark text-light">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <i class="fas fa-code"></i>
-                    <h3>Java</h3>
+            <h1 class="display-4 animate__animated animate__fadeInDown">Tejas Pawar</h1>
+            <p class="lead animate__animated animate__fadeInUp">Java Full Stack Developer | Computer Engineer</p>
+            <a href="#about" class="btn btn-primary mt-3 animate__animated animate__bounceIn">Explore More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p>I am a BE Computer Engineering graduate with knowledge of Java, C++, and problem-solving. Currently
+                        seeking opportunities to enhance my skills in the tech industry.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> 9325600586</li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:tejaspawar1503@gmail.com">tejaspawar1503@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Dhayari, Pune, India</li>
+                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tejas-pawar-33645b235" target="_blank">LinkedIn Profile</a></li>
+                    </ul>
                 </div>
-                <div class="skill">
-                    <i class="fas fa-code-branch"></i>
-                    <h3>Java Full Stack</h3>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-database"></i>
-                    <h3>C++</h3>
-                </div>
-                <div class="skill">
-                    <i class="fas fa-lightbulb"></i>
-                    <h3>Problem-Solving</h3>
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/300" class="img-fluid rounded-circle" alt="Tejas Pawar">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Image Caption Generation</h3>
-                    <p>Developed a system that generates captions for images using machine learning techniques.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Java</h5>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Fake News Detection</h3>
-                    <p>Created a fake news detection system during an internship at YBI Foundation.</p>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <i class="fas fa-code-branch fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Java Full Stack</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">C++</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <i class="fas fa-lightbulb fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Problem Solving</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <ul class="timeline">
-                <li>
-                    <h3>Bachelor of Engineering (Computer)</h3>
-                    <p>Sinhagad College of Engineering, Pune [CGPA: 8.7]</p>
-                </li>
-                <li>
-                    <h3>12th Grade</h3>
-                    <p>B.H. Chate Junior College [92%]</p>
-                </li>
-                <li>
-                    <h3>10th Grade</h3>
-                    <p>S.D. Katariya High School [92.2%]</p>
-                </li>
-            </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Image Caption Generation</h5>
+                            <p class="card-text">Developed a system that generates captions for images using machine learning techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Fake News Detection</h5>
+                            <p class="card-text">Created a fake news detection system during an internship at YBI Foundation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
         <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <form action="mailto:tejaspawar1503@gmail.com" method="post" enctype="text/plain" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form action="mailto:tejaspawar1503@gmail.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary d-block mx-auto">Send Message</button>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Tejas Pawar | All Rights Reserved</p>
-        </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>© 2024 Tejas Pawar | All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
