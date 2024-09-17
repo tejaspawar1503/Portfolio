@@ -1,17 +1,7 @@
-window.addEventListener('scroll', reveal);
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        document.getElementById('loading-screen').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+    }, 4000); // Fake loading for 4 seconds
+});
 
-function reveal() {
-    const reveals = document.querySelectorAll('.section-title, .skill, .project-card');
-
-    reveals.forEach(function (reveal) {
-        const windowHeight = window.innerHeight;
-        const revealTop = reveal.getBoundingClientRect().top;
-        const revealPoint = 150;
-
-        if (revealTop < windowHeight - revealPoint) {
-            reveal.classList.add('active');
-        } else {
-            reveal.classList.remove('active');
-        }
-    });
-}
