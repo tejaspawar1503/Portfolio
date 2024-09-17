@@ -1,156 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tejas Pawar Portfolio - Java Full Stack Developer">
     <title>Tejas Pawar | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="globe-container">
-            <div class="globe">
-                <span class="globe-text">Java</span>
-                <span class="globe-text">Full Stack</span>
-                <span class="globe-text">Spring</span>
-                <span class="globe-text">React</span>
-                <span class="globe-text">REST API</span>
-                <span class="globe-text">JavaScript</span>
-            </div>
-            <h1 class="loading-name">Tejas Pawar</h1>
+    <header id="home">
+        <div class="container">
+            <h1 class="animate-title">Tejas Pawar</h1>
+            <p class="subtitle">Java Full Stack Developer | Computer Engineer</p>
+            <a href="#about" class="btn">Explore More</a>
         </div>
-    </div>
+    </header>
 
-    <!-- Main Website -->
-    <div id="main-content" style="display: none;">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Tejas Pawar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I am a BE Computer Engineering graduate with knowledge of Java, C++, and problem-solving. Currently seeking opportunities to enhance my skills in the tech industry.</p>
+                <ul class="personal-info">
+                    <li><i class="fas fa-phone"></i> 9325600586</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:tejaspawar1503@gmail.com">tejaspawar1503@gmail.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Dhayari, Pune, India</li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tejas-pawar-33645b235" target="_blank">LinkedIn Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Java Full Stack</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Problem-Solving</h3>
                 </div>
             </div>
-        </nav>
+        </div>
+    </section>
 
-        <!-- Hero Section -->
-        <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-center bg-dark text-light">
-            <div class="container">
-                <h1 class="display-4">Tejas Pawar</h1>
-                <p class="lead">Java Full Stack Developer | Computer Engineer</p>
-                <a href="#about" class="btn btn-primary mt-3">Explore More</a>
-            </div>
-        </header>
-
-        <!-- About Section -->
-        <section id="about" class="py-5">
-            <div class="container">
-                <h2 class="mb-4 text-center">About Me</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>I am a BE Computer Engineering graduate specializing in Java Full Stack Development. I am passionate about software development, artificial intelligence, and problem-solving.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-phone"></i> 9325600586</li>
-                            <li><i class="fas fa-envelope"></i> <a href="mailto:tejaspawar1503@gmail.com">tejaspawar1503@gmail.com</a></li>
-                            <li><i class="fas fa-map-marker-alt"></i> Dhayari, Pune, India</li>
-                            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tejas-pawar-33645b235" target="_blank">LinkedIn Profile</a></li>
-                        </ul>
-                    </div>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Image Caption Generation</h3>
+                    <p>Developed a system that generates captions for images using machine learning techniques.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Fake News Detection</h3>
+                    <p>Created a fake news detection system during an internship at YBI Foundation.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="bg-light py-5">
-            <div class="container">
-                <h2 class="mb-4 text-center">Skills</h2>
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-6">
-                        <i class="fas fa-code fa-2x mb-3"></i>
-                        <h5>Java</h5>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <i class="fas fa-code-branch fa-2x mb-3"></i>
-                        <h5>Spring Boot</h5>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <i class="fas fa-database fa-2x mb-3"></i>
-                        <h5>React</h5>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <i class="fas fa-lightbulb fa-2x mb-3"></i>
-                        <h5>Problem Solving</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <ul class="timeline">
+                <li>
+                    <h3>Bachelor of Engineering (Computer)</h3>
+                    <p>Sinhagad College of Engineering, Pune [CGPA: 8.7]</p>
+                </li>
+                <li>
+                    <h3>12th Grade</h3>
+                    <p>B.H. Chate Junior College [92%]</p>
+                </li>
+                <li>
+                    <h3>10th Grade</h3>
+                    <p>S.D. Katariya High School [92.2%]</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-5">
-            <div class="container">
-                <h2 class="mb-4 text-center">Projects</h2>
-                <div class="row">
-                    <!-- Project 1 -->
-                    <div class="col-lg-6">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Image Caption Generation</h5>
-                                <p class="card-text">This project uses Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) to automatically generate descriptive captions for images. The system extracts visual features using VGG16 and LSTM networks to predict contextually relevant captions. It offers significant improvements in accessibility for the visually impaired and enhances content management for digital repositories.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="col-lg-6">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Fake News Detection</h5>
-                                <p class="card-text">During my internship at YBI Foundation, I developed a fake news detection system using natural language processing and machine learning techniques. The system analyzes news content, extracts key textual features, and classifies articles as real or fake with high accuracy, enhancing the fight against misinformation.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="mailto:tejaspawar1503@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-light py-5">
-            <div class="container text-center">
-                <h2 class="mb-4">Contact Me</h2>
-                <form action="mailto:tejaspawar1503@gmail.com" method="post">
-                    <input type="text" name="name" placeholder="Your Name" class="form-control mb-3" required>
-                    <input type="email" name="email" placeholder="Your Email" class="form-control mb-3" required>
-                    <textarea name="message" class="form-control mb-3" placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="bg-dark text-light text-center py-3">
+    <footer>
+        <div class="container">
             <p>© 2024 Tejas Pawar | All Rights Reserved</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
-    <!-- Bootstrap and JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
